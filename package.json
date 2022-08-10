@@ -18,14 +18,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arecabalv/github-npm-registry-be.git"
+    "url": "git+https://github.com/jveraduran/github-npm-registry-be.git"
   },
   "author": "Álvaro Recabal",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/arecabalv/github-npm-registry-be/issues"
+    "url": "https://github.com/jveraduran/github-npm-registry-be/issues"
   },
-  "homepage": "https://github.com/arecabalv/github-npm-registry-be#readme",
+  "homepage": "https://github.com/jveraduran/github-npm-registry-be#readme",
   "dependencies": {
     "husky": "7.0.4",
     "npm": "8.16.0",
