@@ -1,10 +1,6 @@
 name: Github Actions Linter
 on:
-  pull_request: 
-    branches: [develop, staging, master]
-    types: [opened, synchronize]
-  release:
-    types: [published]
+  workflow_call:
 
 jobs:
   Action-lint:
