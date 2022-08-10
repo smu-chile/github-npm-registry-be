@@ -1,5 +1,5 @@
 {
-  "name": "github-npm-registry-be",
+  "name": "@jveraduran/github-npm-registry-be",
   "version": "1.0.0",
   "description": "<p align=\"left\" style=\"text-align:left;\">   <a href=\"https://www.githubuniverse.com/\">     <img alt=\"Github Universe\" src=\"img/github-universe-2022.png\" width=\"1040\"/>   </a> </p>",
   "publishConfig": {
