@@ -42,6 +42,7 @@ jobs:
       pcc_console_url: ${{ secrets.PCC_CONSOLE_URL }}
       pcc_user: ${{ secrets.PCC_USER }}
       pcc_pass: ${{ secrets.PCC_PASS }}
+      PAT_GITHUB_TOKEN: ${{ secrets.PAT_GITHUB_TOKEN }}
   
   Docker-SBOM:
     if: github.event_name != 'opened'
