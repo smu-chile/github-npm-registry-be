@@ -1,10 +1,10 @@
 name: Create and publish a Docker image
 on:
-  pull_request: 
-    branches: [develop, staging, master]
-    types: [opened, synchronize]
-  release:
-    types: [published]
+  workflow_call:
+    secrets:
+      PAT_GITHUB_TOKEN:
+        required: true
+        description: Github Token
 
 env:
   REGISTRY: ghcr.io
