@@ -24,6 +24,7 @@ jobs:
         registry: ${{ env.REGISTRY }}
         username: ${{ github.actor }}
         password: ${{ secrets.PAT_GITHUB_TOKEN }}
+        
     - name: Build a Docker image
       run: docker build -t snyk-image .
     - name: Run Snyk to check Docker image for vulnerabilities
