@@ -2,6 +2,9 @@
   "name": "github-npm-registry-be",
   "version": "1.0.0",
   "description": "<p align=\"left\" style=\"text-align:left;\">   <a href=\"https://www.githubuniverse.com/\">     <img alt=\"Github Universe\" src=\"img/github-universe-2022.png\" width=\"1040\"/>   </a> </p>",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "main": "index.js",
   "scripts": {
     "dev": "nodemon",
