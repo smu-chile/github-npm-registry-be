@@ -3,9 +3,6 @@ on:
   release:
     types: [published]
 
-env:
-  REGISTRY: https://npm.pkg.github.com
-
 jobs:
   Publish-NPM-Package:
     runs-on: ubuntu-latest
@@ -18,7 +15,7 @@ jobs:
         with:
           node-version: 18
           cache-dependency-path: package-lock.json
-          registry-url: ${{env.REGISTRY}}
+          registry-url: https://npm.pkg.github.com
       - run: npm install
       - run: npm ci
       - run: npm publish
