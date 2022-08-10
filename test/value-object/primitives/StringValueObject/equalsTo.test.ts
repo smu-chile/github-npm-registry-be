@@ -1,21 +1,24 @@
 import FirstName from '@test/value-object/primitives/StringValueObject/__mocks__/FirstName'
+import { WordMother } from '@test/mother-object/WordMother';
 
-let firstName: FirstName;
+let name: string;
 
 describe('StringValueObject', () => {
   beforeEach(() => {
-    firstName = new FirstName('First Name');
+    name = WordMother.random()
   })
 
   describe('equals to', () => {
     it(`should return "true" if the values are the same`, () => {
-      const expected = firstName.equalsTo('First Name');
+      const firstName = new FirstName(name)
+      const expected = firstName.equalsTo(name);
 
       expect(expected).toBe(true);
     })
 
     it(`should return "false" if the values are not the same`, () => {
-      const expected = firstName.equalsTo('Other Name');
+      const firstName = new FirstName(WordMother.random())
+      const expected = firstName.equalsTo(name);
 
       expect(expected).toBe(false);
     })

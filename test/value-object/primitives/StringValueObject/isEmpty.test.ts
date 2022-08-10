@@ -1,23 +1,18 @@
 import FirstName from '@test/value-object/primitives/StringValueObject/__mocks__/FirstName'
-
-let firstName: FirstName;
+import { WordMother } from '@test/mother-object/WordMother';
 
 describe('StringValueObject', () => {
-  beforeEach(() => {
-    firstName = new FirstName('');
-  })
-
   describe('is empty', () => {
     it(`should return "true" if the "firstName" are empty`, () => {
+      const firstName = new FirstName(WordMother.random(0))
       const expected = firstName.isEmpty()
 
       expect(expected).toBe(true);
     })
 
     it(`should return "false" if the "firstName" are empty`, () => {
-      const noEmptyFirstName = new FirstName('No empty')
-
-      const expected = noEmptyFirstName.isEmpty()
+      const firstName = new FirstName(WordMother.random())
+      const expected = firstName.isEmpty()
 
       expect(expected).toBe(false);
     })

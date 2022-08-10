@@ -1,7 +1,7 @@
 import { MotherCreator } from './MotherCreator';
 
 export class WordMother {
-  static random(): string {
-    return MotherCreator.random().lorem.word();
+  static random(length = 5): string {
+    return MotherCreator.random().lorem.word(length);
   }
 }

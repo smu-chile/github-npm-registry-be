@@ -1,10 +1,11 @@
 import FirstName from '@test/value-object/primitives/StringValueObject/__mocks__/FirstName'
+import { WordMother } from '../../../mother-object/WordMother';
 
 let firstName: FirstName;
 
 describe('StringValueObject', () => {
   beforeEach(() => {
-    firstName = new FirstName('First Name');
+    firstName = new FirstName(WordMother.random(10));
   })
 
   describe('has more character than', () => {
