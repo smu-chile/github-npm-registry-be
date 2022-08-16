@@ -1,4 +1,4 @@
-import FirstName from '@test/value-object/primitives/StringValueObject/__mocks__/FirstName'
+import FirstName from '../../../../test/value-object/primitives/StringValueObject/__mocks__/FirstName'
 import { WordMother } from '../../../mother-object/WordMother';
 
 let firstName: FirstName;
